@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1.5em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      page-break-before: always;
+      margin-top: 30px;
+    }
+  </style>
+  <style>
+    body {
+    }
+
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #a5b8fd;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+  <style>
+    .title{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    img {
+      margin-right: 10px;
+    }
+  </style>
+  <style>
+    .projects {
+    }
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects > ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects > ol > li {
+      margin-bottom: 24px;
+    }
+
+    .projects > ol > li > header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects > ol > li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skillsUl {
+      margin-left: 20px;
+      list-style-type: circle;
+    }
+
+    #skills {
+
+      width: 500px;
+      height: 270px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills > .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills > .wrapper > :first-child {
+      margin-right: 24px;
+    }
+
+    .skills > .wrapper > #skills {
+    }
+
+    .skills > .wrapper > ul {
+      color: #666;
+    }
+
+    .skills > .wrapper strong {
+      color: #f60;
+    }
+
+    .skills > .wrapper > ul > li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {
+    }
+
+    .openSource > h2 {
+    }
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource > ul {
+    }
+
+    .openSource > ul > li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {
+    }
+  </style>
+  <style>
+    .jobs {
+    }
+
+    .jobs > h2 {
+    }
+
+    .jobs > ol {
+    }
+
+    .jobs > ol > li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header > h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header > h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header > span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header > h3,
+      .jobs header > h4,
+      .jobs header > span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<article>
+  <section class="title">
+    <div>
+      <h1>孙大正</h1>
+      <p>
+        男 | 28岁
+      </p>
+      <p>前端开发工程师 | 杭州</p>
+      <p>
+        手机/微信：18201961626
+      </p>
+      <p>邮箱：18201961626@163.com</p>
+    </div>
+    <img src="./images/photo.jpg" width="100" height="145" alt=""/>
+  </section>
+
+  <section class="projects">
+    <h2>开源项目</h2>
+    <ol>
+      <li>
+        <header>
+          <h3>多彩记账</h3>
+          <span>
+              <a href="https://github.com/Derek-DZ/Accounting-project">源码链接</a>
+              <a href="https://derek-dz.github.io/Account-project-website/">项目预览</a>
+            </span>
+        </header>
+        <p>
+          一款基于 <strong>Vue</strong> / <strong>Vue-Router</strong> / <strong>Vuex</strong> / <strong>TypeScript</strong>
+          / <strong>ECharts</strong>的 单页面应用。
+        </p>
+
+        <p>
+          此项目由本人独立设计及实现，实现期间遇踩到了一些 Vue 和 TypeScript 方面的坑，通过踩坑过程让我更深刻的理解了 Vue 和 TypeScript，相关问题及解决问题的过程记录在本人博客（语雀）。
+          源代码几乎完全使用 TypeScript 实现，用到了装饰器等语法，使用模块化封装。
+        </p>
+
+      </li>
+      <li>
+        <header>
+          <h3>潜海导航</h3>
+          <span>
+              <a href="https://github.com/Derek-DZ/qianhai-navigation">源码链接</a>
+              <a href="https://derek-dz.github.io/qianhai-navigation/dist/index.html">项目预览</a>
+            </span>
+        </header>
+        <p>
+          这是一个基于 <strong>原生JavaScript</strong> 的单页面应用。
+        </p>
+        <p>
+          这是从我自身需求出发，将自己常用的前端网站以标签的形式存储在页面中，方便平时查阅学习资料。
+        </p>
+        <p>
+          主要功能包括搜索功能，常用标签的添加、删除、修改。兼容移动端和PC端。
+        </p>
+
+      </li>
+      <li>
+        <header>
+          <h3>会动的代码</h3>
+          <span>
+            <a href="https://github.com/Derek-DZ/TaiJi-01">源码链接</a>
+            <a href="https://derek-dz.github.io/TaiJi-01/src/index.html">项目预览</a>
+          </span>
+        </header>
+        <p>这是我在学习JavaScript过程中写的一个小作品</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="skills">
+    <h2>技能</h2>
+    <div class="wrapper">
+      <ul class="skillsUl">
+        <li>熟练掌握<strong>HTML、CSS、JavaScript</strong></li>
+        <li>熟悉页面制作技巧，能将设计稿<strong>完美还原</strong></li>
+        <li>熟悉 <strong>TypeScript</strong> 的使用，我的多彩记账项目就是 TS 实现的</li>
+        <li>熟练掌握 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+        <li>熟悉 ES6，包括 let / Promise / 析构赋值</li>
+        <li>了解 <strong>Webpack 的配置和优化</strong></li>
+      </ul>
+      <div id="skills"></div>
+    </div>
+  </section>
+
+<!--  <section class="openSource">-->
+<!--    <h2>开源项目</h2>-->
+<!--    <ul>-->
+<!--      <li class="page2">-->
+<!--        <header>-->
+<!--          <h3>会动的哆啦A梦</h3>-->
+<!--          <span>-->
+<!--              <a href="#">源码链接</a>-->
+<!--              <a href="https://fangyinghang.com/make-a-pikachu/">项目预览</a>-->
+<!--            </span>-->
+<!--        </header>-->
+<!--        <p>这是我在学习 <strong>CSS3和动画</strong> 时制作的一个可爱作品</p>-->
+<!--      </li>-->
+<!--      <li>-->
+<!--        <header>-->
+<!--          <h3>简易画板</h3>-->
+<!--          <span>-->
+<!--              <a href="#">源码链接</a>-->
+<!--              <a href="#">项目预览</a>-->
+<!--            </span>-->
+<!--        </header>-->
+<!--        <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </section>-->
+
+  <section class="jobs">
+    <h2>工作经历</h2>
+    <ol>
+      <li>
+        <header>
+          <h3> 拉脱维亚国债项目中国办公室 </h3>
+          <h4> 项目负责人助理 </h4>
+          <span><time>2018年1月</time>~<time>2020年5月</time></span>
+        </header>
+        <ul>
+          <li>
+            负责协助项目负责人处理各项事务，包括文件处理，活动展示设计（PS），计算机设备维护等。
+          </li>
+        </ul>
+      </li>
+      <li>
+        <header>
+          <h3>上海宝冶集团有限公司</h3>
+          <h4>机械工程师</h4>
+          <span><time>2015年8月</time>~<time>2017年3月</time></span>
+        </header>
+        <ul>
+          <li>负责甲方与施工队伍的协调与沟通，项目排期，施工图纸绘制与整改(AutoCAD)，施工现场设备安装技术支持，BIM建模（Tekla，Revit）等。</li>
+        </ul>
+      </li>
+    </ol>
+  </section>
+
+  <section class="others">
+    <h2>其他链接</h2>
+    <ul>
+      <li><a href="https://www.yuque.com/derek-79ysq">我的博客</a>，主要是关于 JS 和 Vue+TS 项目的技术文章</li>
+    </ul>
+  </section>
+
+  <section class="education">
+    <h2>教育经历</h2>
+    <p>
+      <span><time>2011年</time>~<time>2015年</time></span>
+      大连交通大学 机械工程及自动化 本科
+    </p>
+  </section>
+
+</article>
+<script src="https://cdn.bootcss.com/echarts/4.6.0/echarts.min.js"></script>
+<script src="./main.js"></script>
+</body>
+
+</html>
