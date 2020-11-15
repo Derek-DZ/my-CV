@@ -16,7 +16,7 @@ var option = {
       },
       indicator: [
         { name: '静态页面', max: 100},
-        { name: '编程基础', max: 100},
+        { name: '编程能力', max: 100},
         { name: 'Vue', max: 100},
         // { name: 'React', max: 100},
         { name: '项目开发', max: 100},
@@ -29,7 +29,7 @@ var option = {
       // areaStyle: {normal: {}},
       data: [
           {
-              value: [95, 75, 85, 85, 70],
+              value: [95, 95, 90, 90, 85],
               name: '能力雷达'
           }
       ]
